@@ -5,34 +5,34 @@ export const CUSTOM_BREAKPOINTS = [
     {
         alias: 'xsc',
         suffix: 'Xsc',
-        mediaQuery: 'screen and (max-width: 600px)',//, screen and (max-width:900px) and (max-height:430px)
+        mediaQuery: 'screen and (max-width: 600px)',
         overlapping: false
     },
     {
         alias: 'smc',
         suffix: 'Smc',
-        mediaQuery: 'screen and (max-width: 920px)',//, screen and (max-width:900px) and (max-height:430px)
+        mediaQuery: 'screen and (max-width: 920px)',
         overlapping: false
     },
     {
         alias: 'mdc',
         suffix: 'Mdc',
-        mediaQuery: 'screen and (max-width: 1200px)',//, screen and (max-width:900px) and (max-height:430px)
+        mediaQuery: 'screen and (max-width: 1200px)',
         overlapping: false
     },
     {
         alias: 'lgc',
         suffix: 'Lgc',
-        mediaQuery: 'screen and (max-width: 4000px)',//, screen and (max-width:900px) and (max-height:430px)
+        mediaQuery: 'screen and (max-width: 4000px)',
         overlapping: false
     },
     {
         alias: 'xsc.print',
         suffix: 'XscPrint',
-        mediaQuery: 'print and (max-width: 600px)',//, screen and (max-width:900px) and (max-height:430px)
+        mediaQuery: 'print and (max-width: 600px)',
         overlapping: false
     },
-    
+
 ];
 
 const inputs = [
