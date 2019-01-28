@@ -1,0 +1,70 @@
+<div fxShow fxHide.xsc>
+    <ol>
+        <li>
+            <mat-form-field>
+                <input matInput [(ngModel)]="name" placeholder="What's your name?">
+            </mat-form-field>
+        </li>
+        <li>
+            <button mat-raised-button (click)="openDialog()">Pick one</button>
+        </li>
+        <li *ngIf="animal">
+            You chose: <i>{{animal}}</i>
+        </li>
+    </ol>
+</div>
+<!--
+<mat-drawer-container class="example-container" *ngIf="media.isActive('xsc')" fxHide.print>
+    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+    <mat-drawer-content>Main content</mat-drawer-content>
+
+</mat-drawer-container>-->
+<div fxLayout
+     fxLayoutAlign="center">
+    <div fxFlex="50"
+         fxFlex.mdc="75"
+         fxFlex.xsc="100">
+        <div class="content"
+             fxLayout="row wrap"
+             fxFlexFill
+             fxLayout.xsc="column"
+             fxLayoutAlign="center">
+
+            <div *ngFor="let item of arr"
+                 fxFlex="20"
+                 fxFlex.mdc="50"
+                 fxFlex.xsc="80">
+                <!--fxLayoutGap="10px"-->
+                <mat-card>
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+
+                    <img mat-card-image
+                         src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                         src.xsc="https://material.angular.io/assets/img/examples/shiba1.jpg"
+                         alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                            Japan.
+                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                            originally
+                            bred for hunting.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions [ngStyle]="{'background-color': 'blue', 'opacity': '.75'}"
+                                      [ngStyle.mdc]="{'background-color': 'orange', 'opacity': '.50'}"
+                                      [ngStyle.xsc]="{ 'color': 'green', 'opacity': '.25'}"
+                                      style="transition: all 0.5s ease-in-out;">
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
